@@ -1,67 +1,53 @@
 <?php
-App::uses('ConnectionManager', 'Model');
 
-
-class PhonicsController extends AppController
+class PhonicController extends AppController
 {
+    public $currentDateTime,$studentId;
+	public $vocahw_array = array();
+
 	public $helpers = array('Html','Paginator','Js'=> array('Jquery'));
     public $components = array('Paginator');
-    public $currentDateTime,$studentId;
-    var $paginate = array('page'=>1,'group'=>array('Subject.id'),'order'=>array('Subject.id'=>'desc'),
-						  'joins'=>array(array('table'=>'subject_groups','type'=>'INNER','alias'=>'SubjectGroup','conditions'=>array('Subject.id=SubjectGroup.subject_id')),
-                                        array('table'=>'student_groups','type'=>'INNER','alias'=>'StudentGroup','conditions'=>array('SubjectGroup.group_id=StudentGroup.group_id')),
-                                         ));
-	public $lessons_array = array();
+
+    var $paginate = array('limit' => 1);
+	
     public function beforeFilter()
     {
         parent::beforeFilter();
         $this->authenticate();
         $this->studentId=$this->userValue['Student']['id'];
-        
+		$this->SubjectName="Phonic";
+        $this->limit=5;
     }
     public function index()
     {
-	
+		
+		$vocahw = $this->Phonic->ReadingPracticeQs->find('all', array('conditions' => array('ReadingPracticeQs.category' => "Homework",'Subject.subject_name' => "Phonic")));
+		//$vocahw = $this->Vocabulary->VocaHwQuestion->find('all');`VocaHwQuestion`.`modified`2017-01-04 19:18:00
 		$this->log("Student ID->".$this->studentId,"application");
 		
 		$connection = ConnectionManager::getDataSource('default');
-		$this->log("Executing Query","application");
-//$results = $connection->execute('SELECT * FROM stude')->fetchAll('assoc');
-		$results = $connection->execute('SELECT * FROM student_groups WHERE student_id = '.$this->studentId.'');
-		//find group of student
-		foreach ($results as $student_groups) {
-			$this->log("Groups: ".$student_groups->group_id,"application");
-			
-			//find subjects
-			$subjects_query = 'SELECT * FROM subject_groups WHERE group_id = '.$student_groups->group_id.'';
-			$subjects_result = $connection->execute($subjects_query);
-			
-			foreach($subjects_result as $subjects) {
-				$this->log("Subjects : ".$subjects->subject_id,"application");
-				$subject_name_query = 'SELECT subject_name from subjects where id = "'.$subjects->subject_id.'"';
-				$subject_name_result = $connection->execute($subject_name_query);
-				$subject_name = null;
-				
-				foreach($subject_name_result as $name) {
-					$subject_name = $name->subject_name;
-					
-				//		//Gross code
-				}
-				$this->log("Subject Name 1 : ".$subject_name,"application");
-				
-				//find lessons
-				$lessons_query = 'SELECT * FROM lessons WHERE subject_id = '.$subjects->subject_id.'';
-				$lessons_result = $connection->execute($lessons_query);
-				foreach($lessons_result as $lesson) {
-					$this->log("Lessons : ".$lesson->description,"application");
-					$this->log("Subject Name 2 : ".$subject_name,"application");
-					$lessons_array[] = array("Name"=>$subject_name,"Desc"=>$lesson->description);
-				}
-			}
-		}
-		$this->set("Lessons",$lessons_array);
+		$vocahw_query = 'SELECT q.* from questions as q, question_groups as qg, subjects as s, student_groups as sg where sg.student_id = "'.$this->studentId.'" and s.subject_name = "'.$this->SubjectName.'" and q.subject_id = s.id and sg.group_id = qg.group_id and qg.question_id = q.id';
 		
-
+		$this->log("Executing Query->".$vocahw_query,"application");
+//$results = $connection->execute('SELECT * FROM stude')->fetchAll('assoc');
+		$vocahw_results = $connection->execute($vocahw_query);
+		//find group of student
+		foreach ($vocahw_results as $question) {
+			$this->log("Questions: ".$question->id,"application");
+							
+			$vocahw_array[] = $question->id;
+		}
+		$this->set("vocahwqs",$vocahw_array);
+		$this->set('vocahw', $vocahw);
+		//Find Subject ID
+		
+		//Find Student ID
+		
+		//Find Group ID
+		
+		//Find Questions of Subject ID in Group ID where Student belongs to Group
+		//Filter by todays' date and yesterday's date;
+		
+		//Fill up question array
 	}
-
 }
