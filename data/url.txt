@@ -1,0 +1,6 @@
+https://developer.paypal.com/docs/classic/api/merchant/CreateRecurringPaymentsProfile_API_Operation_NVP/
+https://www.paypal-brasil.com.br/desenvolvedores/code-sample/recurring-payments-php/
+https://developer.paypal.com/docs/classic/products/recurring-payments/
+https://devtools-paypal.com/guide/recurring_payment_ec/php?interactive=ON&env=sandbox
+https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/subscribe_buttons/
+https://developer.paypal.com/docs/classic/api/merchant/GetRecurringPaymentsProfileDetails_API_Operation_NVP/

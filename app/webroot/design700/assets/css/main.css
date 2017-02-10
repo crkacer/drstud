@@ -1,0 +1,91 @@
+﻿#attention {
+    float:right;
+    width:30vw;
+}
+
+#sum {
+    font-size: 18px;
+    height: 60vw;
+    width: 90vw;
+    color: #6D6D6D;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 15px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.green {
+    color: #009100;
+}
+
+#lowerDashBoard {
+    text-align:center;
+    height: 100%;
+    width: 100%;
+    background-color: #F4F4F4;
+    position: fixed;
+    font-size: 18px;
+    color: #6D6D6D;
+    padding-top: 50px;  
+}
+
+table {
+    font-size: 12px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+td:first-child {
+    border-right: none !important;
+    text-align:left;
+}
+
+td:last-child {      
+    border-left: none !important;
+    text-align: right;
+}
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    
+
+    #upperDashBoard {      
+        height: 136px;        
+    }
+    #lowerDashBoard {        
+        width: 980px;       
+        
+        font-size: 24px;     
+    }
+
+    #sum {
+        font-size: 24px;
+        left: 165px;
+        top: 100px;
+        width:650px;
+        height:336px;
+        border:none;        
+        position:absolute;       
+    }
+
+    table {
+        width: 600px;
+        height: 205px;
+        margin-top: 25px;
+        font-size: 14px;        
+    }
+
+    td:first-child {
+        padding: 15px !important;
+    }
+
+    td:last-child {
+        padding: 15px !important;
+    }
+
+
+    #attention {
+        width: auto;
+    }
+}

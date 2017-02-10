@@ -1,0 +1,116 @@
+﻿body {   
+    background-image: url("../images/signIn.png");   
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;    
+}
+
+.container {
+    position: relative;
+    padding: 0px;
+}
+
+#win {
+    margin:auto;
+    height: 60vw;
+    width: 60vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 4vw;
+    text-align: center;
+}
+
+#winLogo {
+    width: 100%;
+    height: 30%;
+    background-image: url("../images/whiteLogo.png");   
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#signInBtn {
+    background-color: #487D42;
+    width: 20vw;
+    height: 7vw;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+table {
+    border-radius: 3px;
+    border-collapse: separate;
+    border: #707070 1px solid;
+    margin-top:20px;
+}
+
+td { 
+    height: 30px;
+    vertical-align: middle !important;
+    padding: 0px 15px 0 15px !important;
+}
+
+#idCol {    
+    border-bottom: 1px solid #707070;    
+}
+
+#passwordCol {
+    border-top: 0px;
+}
+
+input {
+    display: block !important; 
+    padding: 0 !important; 
+    margin: 0 !important; 
+    border: 0 !important; 
+    width: 100% !important; 
+    border-radius: 0 !important; 
+    line-height: 1 !important;
+}
+
+input{
+    background-color:transparent;
+    border: 0px solid;
+}
+input:focus {
+    outline:none;
+}
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    body {
+        width: 1280px;
+        background-size: auto;
+    }
+
+    #win {
+        width:370px;
+        height:380px;
+        border:none;
+        padding: 25px;        
+    }
+
+    table {
+        margin-top: 40px;
+    }
+
+    #signInBtn {   
+        margin-top: 20px;     
+        width: 130px;
+        height: 45px;
+        font-size: 16px;        
+    }
+
+    td {
+        height: 48px;
+    }
+
+}

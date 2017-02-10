@@ -1,0 +1,23 @@
+﻿#profileForm {
+    padding: 20px 40px 0 40px;
+}
+
+form label {
+    width:70px !important;
+    text-align:left !important;
+    font-weight:normal;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#595959;   
+}
+
+form input {
+    max-width: 430px;
+}
+
+.red {
+    color: #f00;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+

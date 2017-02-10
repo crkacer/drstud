@@ -1,0 +1,210 @@
+﻿#win {
+    font-size: 18px;
+    height: 85vw;
+    width: 90vw;
+    color: #6D6D6D;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 15px;
+    text-align: center;
+    margin:0 auto;
+}
+
+#title {
+    margin-bottom: 5px;
+}
+
+#lowerDashBoard {
+    text-align:center;
+    height: 100%;
+    width: 100%;
+    background-color: #F4F4F4;
+    position: fixed;
+    font-size: 18px;
+    color: #6D6D6D;
+    padding-top: 20px;  
+}
+
+table {
+    font-size: 12px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.practiceTable td:first-child {
+    border-right: none !important;
+}
+
+.practiceTable td:nth-child(2) {
+    border-right: none !important;
+    border-left:none !important;
+    text-align:center;
+}
+.practiceTable td:last-child {      
+    border-left: none !important;
+    text-align: left;
+}
+
+td {
+    vertical-align:middle !important;
+}
+
+.modal-content {
+    width: 95vw;
+    background-color:transparent;
+}
+
+.audioSection {
+    margin-bottom: 35px;
+    height: 120px;
+    background-color: #fff; 
+}
+
+.audioRow {
+    height: 117px;
+}
+
+
+.recordBtn {
+    color: #fff;
+    background-color: #4C9C11;
+    border:none;
+    border-radius:2px;
+}
+
+.check {
+    text-align:right;
+}
+
+.specker {
+    text-align: center;
+}
+
+.word {
+    width: 60%;
+    text-align:left;
+    font-size: 28px;
+    color: #383838;
+   
+}
+
+.btnCol {
+    text-align:right;
+    width:30%;
+    padding-right:20px;
+}
+
+.modal {
+  text-align: center;
+}
+
+#modalBtn {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    
+
+    #upperDashBoard {      
+        height: 167px;        
+    }
+
+    #lowerDashBoard {        
+        width: 980px;               
+        font-size: 24px;    
+        padding-top: 50px;  
+    }
+
+    #title {
+        margin-bottom: 20px;
+    }
+
+    #win {
+        font-size: 24px;
+        left: 165px;
+        top: 100px;
+        width:650px;
+        height:336px;
+        border:none;        
+    }
+
+    table.practiceTable {
+        width: 600px !important;
+        height: 205px;
+        margin-top: 25px;
+        font-size: 14px;        
+    }
+
+    .practiceTable td:first-child {
+        width: 244px;
+    }
+
+    .practiceTable td:nth-child(2) {
+        width: 110px;
+    }
+
+    .modal-content {
+        width: 664px;
+        height: 560px;       
+    }
+
+    .audioRow {
+        width:100%;
+        margin: 15px 0 15px 0;   
+        height: 137px;    
+    }
+
+    .recordBtn {
+        width: 139px;
+        height: 64px;
+        font-size: 35px;
+    }
+
+    .audioSection {
+        width:664px;
+        padding-top:2px;
+        height: 167px;
+    }
+
+    .check {
+        width: 75px;
+        text-align:right;
+    }
+
+    .specker {
+        width:100px;
+        text-align: center;
+    }
+
+    .word {
+        width:170px;
+        text-align:left;
+        font-size: 35px;
+        color: #383838;
+        font-size: 35px;
+    }
+
+    .empty {    
+        border-right:solid 1px #888888;
+    }
+
+    .btnCol {
+        text-align:center;
+        width:230px;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+   
+}
+

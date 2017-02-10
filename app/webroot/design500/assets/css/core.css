@@ -1,0 +1,133 @@
+.border-circle {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+}
+
+body {
+font-family: 'Open sans', sans-serif;
+font-size: 13px;
+line-height: 1.42857143;
+color: #777777;
+background-color: #e9e9e9;
+margin: 0;
+}
+.ptn, .pvn, .pan {
+padding-top: 0 !important;
+}
+.btn.btn-circle {
+-webkit-border-radius: 25px !important;
+-moz-border-radius: 25px !important;
+border-radius: 25px !important;
+}
+.btn.btn-shadow {
+-webkit-box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07) !important;
+box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.07) !important;
+}
+.panel-primary{box-shadow: 6px 10px 7px #4E4E4E;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+z-index: 2;
+color: #ffffff;
+background-color: #ff5722;
+border-color: #ff5722;
+cursor: default;
+}
+.btn-default {
+color: #333333;
+background-color: #efefef;
+border-color: #dddddd;
+}
+.btn-primary {
+color: #ffffff;
+background-color: #ff5722;
+border-color: #ff5722;
+}
+.btn-success {
+color: #ffffff;
+background-color: #07bf29;
+border-color: #07bf29;
+}
+.btn-info {
+color: #ffffff;
+background-color: #2196f3;
+border-color: #2196f3;
+}
+.btn-warning {
+color: #ffffff;
+background-color: #ffc107;
+border-color: #ffc107;
+}
+.btn-danger {
+color: #ffffff;
+background-color: #ea2e49;
+border-color: #ea2e49;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+color: #ffffff;
+background-color: #ee3900;
+border-color: #e43700;
+}
+.panel-custom>.panel-heading {
+color: #FFFFFF;
+background-color: #0F192A;
+border-color: #FFFFFF;
+}
+.logo{font-size: 20px;padding-top: 15px;}
+@media only screen and (min-width: 520px) and (max-width: 570px) {
+ .logo{font-size: 18px;}
+}
+@media only screen and (min-width: 470px) and (max-width: 519px) {
+ .logo{font-size: 16px;}
+}
+@media only screen and (min-width: 420px) and (max-width: 469px) {
+ .logo{font-size: 14px;}
+}
+@media only screen and (min-width: 220px) and (max-width: 419px) {
+ .logo{font-size: 12px;}
+}
+.label-danger {
+background-color: #ea2e49;
+}
+.label-success {
+background-color: #07bf29;
+}
+.alert-success {
+background-color: #dff0d8;
+border-color: rgba(7, 191, 41, 0.2);
+color: #07bf29;
+}
+.alert-danger {
+background-color: #f2d9d7;
+border-color: rgba(234, 46, 73, 0.2);
+color: #ea2e49;
+}
+.panel-primary>.panel-heading{border-color: #FFFFFF;}
+.label-default {
+background-color: #cccccc;
+border-color: #cccccc;
+}
+.label-primary {
+background-color: #ff5722;
+border-color: #ff5722;
+}
+.label-success {
+background-color: #07bf29;
+border-color: #07bf29;
+}
+.label-info {
+background-color: #2196f3;
+border-color: #2196f3;
+}
+.label-warning {
+background-color: #ffc107;
+border-color: #ffc107;
+}
+.label-danger {
+background-color: #ea2e49;
+border-color: #ea2e49;
+}

@@ -1,0 +1,112 @@
+#App/Admin/Model/group.php:7
+msgid "Only letters and numbers allowed"
+msgstr "Only letters and numbers allowed"
+
+#App/Admin/Model/group.php:8
+msgid "Group  already exist"
+msgstr "Group  already exist"
+
+#App/Admin/Model/Advertisement.php:22
+msgid "Only Url"
+msgstr "Only Url"
+
+#App/Admin/Model/Advertisement.php:23
+msgid "File does not have a valid extension"
+msgstr "File does not have a valid extension"
+
+#App/Admin/Model/Advertisement.php:24
+msgid "You must supply a JPG, GIF  or PNG File."
+msgstr "You must supply a JPG, GIF  or PNG File."
+
+#App/Admin/Model/Confrigration.php:24
+msgid "Invalid Header Contact"
+msgstr "Invalid Header Contact"
+
+#App/Admin/Model/Content.php:6
+msgid "Only Alphabets"
+msgstr "Only Alphabets"
+
+#App/Admin/Model/Content.php:12
+msgid "Currency Name already exist"
+msgstr "Currency Name already exist"
+
+#App/Admin/Model/Currency.php:15
+msgid "You must supply image height is less than 50px"
+msgstr "You must supply image height is less than 50px"
+
+#App/Admin/Model/Currency.php:16
+msgid "You must supply image width is less than 50px"
+msgstr "You must supply image width is less than 50px"
+
+#App/Admin/Model/Exam.php:8
+msgid "Only numbers allowed"
+msgstr "Only numbers allowed"
+
+#App/Admin/Model/Exam.php:12
+msgid "Only Date/time format"
+msgstr "Only Date/time format"
+
+#App/Admin/Model/forgot.php:6
+msgid "Enter a valid email"
+msgstr "Enter a valid email"
+
+#App/Admin/Model/Iequestion.php:10
+msgid "Please select"
+msgstr "Please select"
+
+#App/Admin/Model/payment.php:8
+msgid "Invalid Username"
+msgstr "Invalid Username"
+
+#App/Admin/Model/payment.php:9
+msgid "Invalid Password"
+msgstr "Invalid Password"
+
+#App/Admin/Model/payment.php:10
+msgid "Invalid Signature"
+msgstr "Invalid Signature"
+
+#App/Admin/Model/question.php:10
+msgid "Only numbers"
+msgstr "Only numbers"
+
+#App/Admin/Model/signature.php:17
+msgid "You must supply image height is less than 220px"
+msgstr "You must supply image height is less than 220px"
+
+#App/Admin/Model/student.php:18
+msgid "This Email has already been exist! try new one"
+msgstr "This Email has already been exist! try new one"
+
+#App/Admin/Model/student.php:20
+msgid "Password required"
+msgstr "Password required"
+
+#App/Admin/Model/student.php:21
+msgid "Password minimum 4 character long"
+msgstr "Password minimum 4 character long"
+
+#App/Admin/Model/Diff.php:10
+msgid "Name already exist"
+msgstr "Name already exist"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

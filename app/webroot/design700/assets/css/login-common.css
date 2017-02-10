@@ -1,0 +1,703 @@
+﻿body {
+    background-position: center top;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #F4F4F4;
+    position:fixed;
+    z-index: 1000;
+    -webkit-backface-visibility: hidden;
+}
+
+.row {
+    margin: 0px;        
+}
+
+.pageRow {
+    padding-top: 50px;
+}
+
+.container {
+    padding: 0px;
+}
+
+.dashBoardTitle {
+   
+    color: #6D6D6D;
+    
+    font-size: 24.8px;
+    padding: 38px 0 0 35px;
+}
+
+.dashBoardUrl {
+    color: #595959;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 0 35px;
+}
+
+#logOutBtn {
+    background-color: #727272;
+    color: #fff;
+    float: right;
+    margin-top: 10px; 
+    margin-right: 25px;
+    border:none;
+    border-radius: 4px;
+}
+
+.nav {
+    display: none;
+}
+
+#mobileMenuLogo {
+    width:80px;
+    height: 50px;
+    position: fixed;
+    background-color:#2B4D6E;
+    display: none;
+}
+
+.hamburger{
+  background:none;
+  position:absolute;
+  margin:auto;
+  line-height:45px;
+  padding:0px 15px 0px 25px;
+  color:#fff;
+  border:0;
+  font-size:30px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:100;  
+}
+
+
+.mobileMenu{
+    z-index:100; 
+    font-weight:bold; 
+    font-size:14px; 
+    width:50%; 
+    background:#2B4D6E; 
+    padding:10px;
+    text-align:center;
+    top:0px;left:0px;
+    position:absolute; 
+    max-width:200px; 
+    display:none;
+    color: #fff
+}
+
+.mobileMenu ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none;
+}
+
+.mobileMenu li {
+    display: block;   
+    padding:5px 0 5px 0; 
+    text-align: left;
+}
+
+.mobileMenu li:not(.hasSub):hover{
+    display: block; 
+    background: #003366;
+}
+
+.mobileMenu ul li a { 
+    text-decoration:none;  
+    margin: 0 0 0 10px; 
+    color:#fff;
+}
+
+.mobileMenu ul li a:hover {  
+    color: #fff; 
+    text-decoration:none;
+}
+
+.hasSub {
+    margin-left: 25px;
+}
+
+
+
+/*homework page*/
+.homework#win {
+    font-size: 18px;
+    height: 85vw;
+    width: 90vw;
+    color: #6D6D6D;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 15px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.homework#title {
+    margin-bottom: 5px;
+}
+
+.homework#lowerDashBoard {
+    text-align:center;
+    width: 100%;
+    background-color: #F4F4F4;
+    /*position: fixed;*/
+    font-size: 18px;
+    color: #6D6D6D;
+    padding-top: 20px;  
+}
+
+table.homework {
+    font-size: 12px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.homework.practiceTable td:first-child {
+    border-right: none !important;
+}
+
+.homework.practiceTable td:nth-child(2) {
+    border-right: none !important;
+    border-left:none !important;
+    text-align:center;
+}
+.homework.practiceTable td:last-child {      
+    border-left: none !important;
+    text-align: left;
+}
+
+td.homework {
+    vertical-align:middle !important;
+}
+
+.homework.modal-content {
+    width: 95vw;
+    background-color:transparent;
+}
+
+.homework.audioSection {
+    margin-bottom: 35px;
+    height: 120px;
+    background-color: #fff; 
+}
+
+.homework.audioRow {
+    height: 117px;
+}
+
+
+.homework.recordBtn {
+    color: #fff;
+    background-color: #4C9C11;
+    border:none;
+    border-radius:2px;
+}
+
+.homework.check {
+    text-align:right;
+}
+
+.homework.specker {
+    text-align: center;
+}
+
+.homework.word {
+    width: 60%;
+    text-align:left;
+    font-size: 28px;
+    color: #383838;
+   
+}
+
+.homework.btnCol {
+    text-align:right;
+    width:30%;
+    padding-right:20px;
+}
+
+.homework.modal {
+  text-align: center;
+}
+
+.homework#modalBtn {
+    margin-bottom: 20px;
+}
+
+
+
+
+/*main page*/
+.main#attention {
+    float:right;
+    width:30vw;
+}
+
+.main#sum {
+    font-size: 18px;
+    height: 60vw;
+    width: 90vw;
+    color: #6D6D6D;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 15px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.main.green {
+    color: #009100;
+}
+
+.main#lowerDashBoard {
+    text-align:center;
+    width: 100%;
+    background-color: #F4F4F4;
+    font-size: 18px;
+    color: #6D6D6D;
+    padding-top: 50px;  
+}
+
+table.main {
+    font-size: 12px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+td:first-child.main {
+    border-right: none !important;
+    text-align:left;
+}
+
+td:last-child.main {      
+    border-left: none !important;
+    text-align: right;
+}
+
+
+
+/*profile page*/
+.profile#profileForm {
+    padding: 20px 40px 0 40px;
+}
+
+form.profile label {
+    width:70px !important;
+    text-align:left !important;
+    font-weight:normal;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#595959;   
+}
+
+form.profile input {
+    max-width: 430px;
+}
+
+.red.profile {
+    color: #f00;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*signin page*/
+body.signin {   
+    background-image: url("../images/signIn.png");   
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;    
+}
+
+.container.signin {
+    position: relative;
+    padding: 0px;
+}
+
+#win.signin {
+    margin:auto;
+    height: 60vw;
+    width: 60vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    border: #BDBDBD solid 1px;
+    padding: 4vw;
+    text-align: center;
+}
+
+#winLogo.signin {
+    width: 100%;
+    height: 30%;
+    background-image: url("../images/whiteLogo.png");   
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#signInBtn.signin {
+    background-color: #487D42;
+    width: 20vw;
+    height: 7vw;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+table.signin {
+    border-radius: 3px;
+    border-collapse: separate;
+    border: #707070 1px solid;
+    margin-top:20px;
+}
+
+td.signin { 
+    height: 30px;
+    vertical-align: middle !important;
+    padding: 0px 15px 0 15px !important;
+}
+
+#idCol.signin {    
+    border-bottom: 1px solid #707070;    
+}
+
+#passwordCol.signin {
+    border-top: 0px;
+}
+
+input.signin {
+    display: block !important; 
+    padding: 0 !important; 
+    margin: 0 !important; 
+    border: 0 !important; 
+    width: 100% !important; 
+    border-radius: 0 !important; 
+    line-height: 1 !important;
+}
+
+input.signin{
+    background-color:transparent;
+    border: 0px solid;
+}
+input:focus.signin {
+    outline:none;
+}
+
+
+
+
+/*video page*/
+#videoSection.videoPage {
+    margin:35px 20px 0 20px;
+}
+
+.video.videoPage {
+    width: 255px;
+    height: 145px;
+    margin-right: 20px;  
+}
+
+.videoDes.videoPage {
+    width: 100%;   
+}
+
+.title.videoPage {
+    font-size:18px;
+    font-weight:bold;
+}
+
+.date.videoPage {
+    font-size:12px;
+}
+
+.watchBtn.videoPage {
+    margin-top:8px;
+    background-color: #727272;
+    color: #fff;
+    border:none;
+    margin-bottom:20px;
+}
+
+
+.videoBorder.videoPage {
+     border-bottom: #D9D9D9 1px solid;  
+     margin-bottom: 30px;
+     padding-bottom: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+    /* For desktop: */
+    .container {
+        width: 1280px;       
+    }
+
+    .header {
+        width: 1280px;
+    }
+
+    
+
+    .nav {        
+        display: inline;
+        background-color: #2B4D6E;
+        width: 300px;
+        height: 800px;
+        float:left;
+    }
+
+    #logo {
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-bottom: 60px;
+    }
+
+    #menu {
+    margin-left: 35px;    
+}
+
+#menu a {
+    color: #fff;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: bold;   
+}
+
+.menuItem {
+    margin-bottom: 38px;
+}
+
+    .subMenu {
+        margin-left: 26px;
+    }
+
+    .subMenuItem {
+        margin-top: 15px;
+    }
+
+    #dashBoard {
+        float: right;
+        width: 980px;
+    }
+
+    #logOutBtn {        
+        width: 73px;
+        height: 27px;
+    }
+
+    .subMenu {
+        display: none;
+    }
+
+    
+
+
+    /*homework page*/
+    .homework#upperDashBoard {      
+        height: 167px;    
+        background-color: #FFF;    
+    }
+
+    .homework#lowerDashBoard {        
+        width: 980px;               
+        font-size: 24px;    
+        padding-top: 50px;  
+    }
+
+    .homework#title {
+        margin-bottom: 20px;
+    }
+
+    .homework#win {
+        font-size: 24px;
+        left: 165px;
+        top: 100px;
+        width:650px;
+        height:336px;
+        border:none;        
+    }
+
+    table.practiceTable.homework {
+        width: 600px !important;
+        height: 205px;
+        margin-top: 25px;
+        font-size: 14px;        
+    }
+
+    .homework.practiceTable td:first-child {
+        width: 244px;
+    }
+
+    .homework.practiceTable td:nth-child(2) {
+        width: 110px;
+    }
+
+    .homework.modal-content {
+        width: 664px;
+        height: 560px;       
+    }
+
+    .homework.audioRow {
+        width:100%;
+        margin: 15px 0 15px 0;   
+        height: 137px;    
+    }
+
+    .homework.recordBtn {
+        width: 139px;
+        height: 64px;
+        font-size: 35px;
+    }
+
+    .homework.audioSection {
+        width:664px;
+        padding-top:2px;
+        height: 167px;
+    }
+
+    .homework.check {
+        width: 75px;
+        text-align:right;
+    }
+
+    .homework.specker {
+        width:100px;
+        text-align: center;
+    }
+
+    .homework.word {
+        width:170px;
+        text-align:left;
+        font-size: 35px;
+        color: #383838;
+        font-size: 35px;
+    }
+
+    .homework.empty {    
+        border-right:solid 1px #888888;
+    }
+
+    .homework.btnCol {
+        text-align:center;
+        width:230px;
+    }
+
+    .homework.modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .homework.modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+   
+
+    .homework#dashBoard {
+        background-color: #F4F4F4;
+    }
+
+
+
+    /*main page*/
+    .main#upperDashBoard {      
+        height: 136px;   
+        background-color: #FFF;      
+    }
+    .main#lowerDashBoard {        
+        width: 980px;       
+        
+        font-size: 24px;     
+    }
+
+    .main#sum {
+        font-size: 24px;
+        /*left: 165px;
+        top: 100px;*/
+        width:650px;
+        height:336px;
+        border:none;   
+        margin-top: 25px;     
+        /*position:absolute; */      
+    }
+
+    table.main {
+        width: 600px;
+        height: 205px;
+        margin-top: 25px;
+        font-size: 14px;        
+    }
+
+    td:first-child.main {
+        padding: 15px !important;
+    }
+
+    td:last-child.main {
+        padding: 15px !important;
+    }
+
+
+    #attention.main {
+        width: auto;
+    }
+
+    #dashBoard.main {
+        background-color: #F4F4F4;
+    }
+
+
+
+
+    /*signin page*/
+    body.signin {
+        width: 1280px;
+        background-size: auto;
+    }
+
+    #win.signin {
+        width:370px;
+        height:380px;
+        border:none;
+        padding: 25px;        
+    }
+
+    table.signin {
+        margin-top: 40px;
+    }
+
+    #signInBtn.signin {   
+        margin-top: 20px;     
+        width: 130px;
+        height: 45px;
+        font-size: 16px;        
+    }
+
+    td.signin {
+        height: 48px;
+    }
+
+
+
+    /*video page*/
+    .videoDes.videoPage {
+        width: 420px;
+    }
+}

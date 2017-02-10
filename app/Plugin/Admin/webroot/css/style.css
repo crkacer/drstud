@@ -1,0 +1,17 @@
+body{background:#f9f9f9;}
+.login{width: 300px;padding:10px;left: 50%;margin-top:15px;margin-left: -160px;border: 10px solid #E5E5E5;display: block;-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.1);box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius: 10px;}
+.mrg{margin-top:25px; margin-bottom:10px;}
+.pagination {margin: 2px 0;}
+.pad{padding:5px 5px;}
+.mrg-1{margin-top: 5px;}
+.asc{background: url('../img/sort_asc.png') no-repeat center right;cursor: pointer;display: block;}
+.desc{background: url('../img/sort_desc.png') no-repeat center right;cursor: pointer;display: block;}
+table tr th a{color:#000;background: url('../img/sort_both.png') no-repeat center right;cursor: pointer;display: block;}
+table tr th a:hover{text-decoration: none;}
+.error-message{color: #FF0000;}
+.cust-supt{font-size: 45px;font-weight:900;font-family:"Times New Roman", Times, serif; color:#2166b1;margin-left:15px;margin-top:25px;}
+.cust-head2{font-size: 18px;margin:15px 15px 15px 15px; font-weight:900;font-family:"Times New Roman", Times, serif; color:#545454;text-align: center;}
+.cust-head2 a{color:#ff2626;}
+.cust-list li{ line-height:35px; font-size:18px;font-weight:900;font-family:"Times New Roman", Times, serif; color:#7b7d70;}
+.cust-list li a{color:#555555;}
+.error-message{color: #FF0000;}
