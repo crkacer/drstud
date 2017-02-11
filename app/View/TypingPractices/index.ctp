@@ -19,9 +19,6 @@ $this->Paginator->options(array(
 		<div id="resDiv">
 	
 		</div>
-
-      			
-                    
                     <div class="phonics_section">
                     	 <h2>Typing Practice</h2>
                          <div class="content mCustomScrollbar">

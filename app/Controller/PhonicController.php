@@ -2,7 +2,7 @@
 App::uses('ConnectionManager', 'Model');
 
 
-class PhonicsController extends AppController
+class PhonicController extends AppController
 {
 	public $helpers = array('Html','Paginator','Js'=> array('Jquery'));
     public $components = array('Paginator');

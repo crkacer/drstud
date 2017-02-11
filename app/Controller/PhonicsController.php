@@ -1,6 +1,6 @@
 <?php
 
-class PhonicController extends AppController
+class PhonicsController extends AppController
 {
     public $currentDateTime,$studentId;
 	public $vocahw_array = array();
@@ -15,13 +15,13 @@ class PhonicController extends AppController
         parent::beforeFilter();
         $this->authenticate();
         $this->studentId=$this->userValue['Student']['id'];
-		$this->SubjectName="Phonic";
+		$this->SubjectName="Phonics";
         $this->limit=5;
     }
     public function index()
     {
 		
-		$vocahw = $this->Phonic->ReadingPracticeQs->find('all', array('conditions' => array('ReadingPracticeQs.category' => "Homework",'Subject.subject_name' => "Phonic")));
+		$vocahw = $this->Phonic->PhonicPracticeQs->find('all', array('conditions' => array('PhonicPracticeQs.category' => "Homework",'Subject.subject_name' => "Phonics")));
 		//$vocahw = $this->Vocabulary->VocaHwQuestion->find('all');`VocaHwQuestion`.`modified`2017-01-04 19:18:00
 		$this->log("Student ID->".$this->studentId,"application");
 		

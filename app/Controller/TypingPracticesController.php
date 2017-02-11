@@ -5,7 +5,7 @@ class TypingPracticesController extends AppController
     public $currentDateTime,$studentId;
 	public $vocahw_array = array();
 
-	    public $helpers = array('Html','Paginator','Js'=> array('Jquery'));
+	public $helpers = array('Html','Paginator','Js'=> array('Jquery'));
     public $components = array('Paginator');
 
     var $paginate = array('limit' => 1);
