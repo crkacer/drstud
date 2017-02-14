@@ -83,6 +83,7 @@ $this->Paginator->options(array(
 													<span id="countdown" class="timer"></span>
 													<!-- <h2>Log</h2>-->
 													<pre id="log" style="display:none"></pre>
+													<pre id="sql-log" style="display:none"></pre>
 												</div>
 													<span id="recordingslist"></span>
 											<!---- ANSWER SECTION --------->
