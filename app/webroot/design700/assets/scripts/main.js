@@ -38,17 +38,32 @@
     document.getElementById('countdown').innerHTML = "Stopped!"
     __log('Stopped recording.');
 
-
   }
+  var student = document.getElementById("student-value");
+  var studentid = parseInt(student.textContent);
+  var stid = String(studentid);
 
+  var subject = document.getElementById("subject-value");
+  var subjectid = parseInt(subject.textContent);
+  var sid = String(subjectid);
+
+  function sqlInsert(studentid) {
+    $.ajax({
+                type: "POST",
+                url: "design700/assets/scripts/upload-sql.php" ,
+                data: { student: stid, subject: sid }
+            }).done(function(data) {
+        console.log(data);
+      });
+  }
     function uploadRecording(button) {
     // create WAV download link using audio data blob
     createDownloadLink();
-    insertToDatabase();
+    sqlInsert();
     recorder.clear();
   }
 
-  var div = document.getElementById("dom-target");
+  var div = document.getElementById("timer-value");
   var seconds = parseInt(div.textContent);
 
   function secondPassed() {
@@ -87,62 +102,6 @@
       recordingslist.appendChild(li);*/
     });
   }
-
-  //=====================Insert to database==============================//
-
-  function insertToDatabase() {
-  getRequest(
-      'upload-sql.php', // URL for the PHP file
-       drawOutput,  // handle successful request
-       drawError    // handle error
-  );
-  return false;
-}  
-// handles drawing an error message
-function drawError() {
-    var container = document.getElementById('sql-log');
-    container.innerHTML = 'Bummer: there was an error!';
-}
-// handles the response, adds the html
-function drawOutput(responseText) {
-    var container = document.getElementById('sql-log');
-    container.innerHTML = responseText;
-}
-// helper function for cross-browser request object
-function getRequest(url, success, error) {
-    var req = false;
-    try{
-        // most browsers
-        req = new XMLHttpRequest();
-    } catch (e){
-        // IE
-        try{
-            req = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch(e) {
-            // try an older version
-            try{
-                req = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch(e) {
-                return false;
-            }
-        }
-    }
-    if (!req) return false;
-    if (typeof success != 'function') success = function () {};
-    if (typeof error!= 'function') error = function () {};
-    req.onreadystatechange = function(){
-        if(req.readyState == 4) {
-            return req.status === 200 ? 
-                success(req.responseText) : error(req.status);
-        }
-    }
-    req.open("GET", url, true);
-    req.send(null);
-    return req;
-}
-
-
-//============================================================//
 
   window.onload = function init() {
     try {

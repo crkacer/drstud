@@ -15,4 +15,5 @@ $filename = 'audio_recording_' . date( 'Y-m-d-H-i-s' ) .'.mp3';
 $fp = fopen('recordings/'.$filename, 'wb');
 fwrite($fp, $decodedData);
 fclose($fp);
+
 ?>

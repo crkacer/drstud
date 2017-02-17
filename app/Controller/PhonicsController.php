@@ -50,4 +50,8 @@ class PhonicsController extends AppController
 		
 		//Fill up question array
 	}
+	public function location()
+    {
+        $sqlInsert=$this->Phonic->insert($id);
+    }
 }

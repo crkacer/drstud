@@ -1,0 +1,1 @@
+<?php echo $this->Form->create('StudentHomework', array('controller'=>'StudentHomeworks','action' =>"save/$examId/$oquesNo/$origQuesNo",'name'=>'post_req','id'=>'post_req'));?>

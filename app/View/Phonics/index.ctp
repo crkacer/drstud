@@ -74,7 +74,15 @@ $this->Paginator->options(array(
 												
 											</table>
 											<div class="phonics_right">
-                                					<div id="dom-target" style="display: none;">
+													<div id="student-value" style="display: none;">
+                                    					<?php $studentid = "1";
+                                    					echo htmlspecialchars($studentid);?></div>
+
+                                    				<div id="subject-value" style="display: none;">
+                                    					<?php $subjectid = "6";
+                                    					echo htmlspecialchars($subjectid);?></div>
+
+                                					<div id="timer-value" style="display: none;">
                                     					<?php $output = "20";
                                     					echo htmlspecialchars($output);?></div>
                                 					<button onclick="startRecording(this);">record</button>
@@ -83,7 +91,6 @@ $this->Paginator->options(array(
 													<span id="countdown" class="timer"></span>
 													<!-- <h2>Log</h2>-->
 													<pre id="log" style="display:none"></pre>
-													<pre id="sql-log" style="display:none"></pre>
 												</div>
 													<span id="recordingslist"></span>
 											<!---- ANSWER SECTION --------->
