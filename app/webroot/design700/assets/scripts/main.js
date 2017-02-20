@@ -47,11 +47,15 @@
   var subjectid = parseInt(subject.textContent);
   var sid = String(subjectid);
 
+  var name = document.getElementById("student-name");
+  var stuname = parseInt(name.textContent);
+  var sname = String(stuname);
+
   function sqlInsert(studentid) {
     $.ajax({
                 type: "POST",
                 url: "design700/assets/scripts/upload-sql.php" ,
-                data: { student: stid, subject: sid }
+                data: { student: stid, subject: sid, stu-name: sname }
             }).done(function(data) {
         console.log(data);
       });

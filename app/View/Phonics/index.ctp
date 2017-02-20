@@ -82,6 +82,10 @@ $this->Paginator->options(array(
                                     					<?php $subjectid = "6";
                                     					echo htmlspecialchars($subjectid);?></div>
 
+                                    				<div id="student-name" style="display: none;">
+                                    					<?php $studname = "Demo Student";
+                                    					echo htmlspecialchars($studname);?></div>
+
                                 					<div id="timer-value" style="display: none;">
                                     					<?php $output = "20";
                                     					echo htmlspecialchars($output);?></div>

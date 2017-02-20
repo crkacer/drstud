@@ -143,7 +143,7 @@ function googleTranslateElementInit() {
         
         <div class="row">
 
-            <!-- left navigation bar begin------------------------------------------------------------------------------>
+            <!-- left navigation bar begin-->
             <div class="nav">
                
                 <img src="/design700/assets/images/logo.png" id="logo"/>
@@ -170,7 +170,7 @@ function googleTranslateElementInit() {
                     <div class="menu_head"><h2><i class="fa fa-envelope" aria-hidden="true"></i><a href="/Mails">Message</a></h2></div>
                 </div>
             </div>
-            <!-- left navigation bar end----------------------------------------------------------------------------->
+            <!-- left navigation bar end->
 
 
 

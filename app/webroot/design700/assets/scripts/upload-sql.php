@@ -28,13 +28,14 @@
 			return $result;
 		}
 	};
+
 $path = "/app/webroot/design700/assets/scripts/recordings/".$_POST['student'];
 $subject = $_POST['subject'];
-$query = "INSERT INTO student_homeworks (student_id, question_type, record_location, subject_id) VALUES (1, 'R'".",'$path',"."'$subject')";
+$name = $_POST['stu-name'];
+$query = "INSERT INTO homework_phonics (student_id, student_name, question_type, record_location, subject_id) VALUES (1,"."'$name',"."'R'".",'$path',"."'$subject')";
 // $data = $conn->execute($query);
 $data = ConnectDB::execQuery($query);
-echo $path;
+
 echo $query;
-echo "TRACE OUT";
 echo $data;
 ?>
