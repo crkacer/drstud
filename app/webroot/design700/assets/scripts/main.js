@@ -39,7 +39,10 @@
     __log('Stopped recording.');
 
   }
-  var student = document.getElementById("student-value");
+
+
+
+  var student = document.getElementById("studentValue");
   var studentid = parseInt(student.textContent);
   var stid = String(studentid);
 
@@ -47,16 +50,33 @@
   var subjectid = parseInt(subject.textContent);
   var sid = String(subjectid);
 
-  var name = document.getElementById("student-name");
-  var stuname = parseInt(name.textContent);
-  var sname = String(stuname);
+  // var sname;
+  // var name = document.getElementById("studentName");
+  // if (name) {
+  //   sname = name.value;
+  // } else {
+  //   sname = "Demo";
+  // }
+  var sname = "Demo Student";
+  // var questionstr;
+  // var q = document.getElementById("question-value");
+  // if (q != null) {
+  //   questionstr = q.value;
+  // } else {
+  //   questionstr = "nil";
+  // }
+
+  var q = document.getElementById("question-value");
+  var qq = parseInt(q.textContent);
+  var questionstr = String(qq);
 
   function sqlInsert(studentid) {
+    console.log(sname);
     $.ajax({
-                type: "POST",
-                url: "design700/assets/scripts/upload-sql.php" ,
-                data: { student: stid, subject: sid, stu-name: sname }
-            }).done(function(data) {
+        type: "POST",
+        url: "design700/assets/scripts/upload-sql.php",
+        data: { student: stid, subject: sid, stuname: sname, question: questionstr}
+          }).done(function(data) {
         console.log(data);
       });
   }

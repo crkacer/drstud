@@ -169,6 +169,7 @@ function googleTranslateElementInit() {
 	      <li class="external"><?php echo$this->Html->link('<span>'.__('All Messages').'</span> <i class="fa-link-ext"></i>',array('controller'=>'Mails','action'=>'index'),array('escape'=>false));?></li>
 	  </ul> </li>
 	</ul>
+	
 	<ul class="user-info-menu right-links list-inline list-unstyled">
 	  <li class="dropdown user-profile"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i> <span><?php echo h($UserArr['User']['name']);?><i class="fa-angle-down"></i> </span> </a>
 	    <ul class="dropdown-menu user-profile-menu list-unstyled">

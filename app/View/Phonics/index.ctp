@@ -61,6 +61,8 @@ $this->Paginator->options(array(
 															<div class="mrg-left">
 															
 																<strong><?php echo str_replace("<script","",$value['PhonicPracticeQs']['question']);?></strong>
+																<div id="question-value" style="display: none;">
+                                    								<?php echo htmlspecialchars($value['PhonicPracticeQs']['id']);?></div>
 															</div>
 														</div>
 													</td>
@@ -74,7 +76,7 @@ $this->Paginator->options(array(
 												
 											</table>
 											<div class="phonics_right">
-													<div id="student-value" style="display: none;">
+													<div id="studentValue" style="display: none;">
                                     					<?php $studentid = "1";
                                     					echo htmlspecialchars($studentid);?></div>
 
@@ -82,8 +84,8 @@ $this->Paginator->options(array(
                                     					<?php $subjectid = "6";
                                     					echo htmlspecialchars($subjectid);?></div>
 
-                                    				<div id="student-name" style="display: none;">
-                                    					<?php $studname = "Demo Student";
+                                    				<div id="studentName" style="display: none;">
+                                    					<?php $studname = "Demo";
                                     					echo htmlspecialchars($studname);?></div>
 
                                 					<div id="timer-value" style="display: none;">
@@ -97,7 +99,7 @@ $this->Paginator->options(array(
 													<pre id="log" style="display:none"></pre>
 												</div>
 													<span id="recordingslist"></span>
-											<!---- ANSWER SECTION --------->
+											<!-- ANSWER SECTION ->
 											
 											<?php if ($value['Qtype']['type']=="M"){
 

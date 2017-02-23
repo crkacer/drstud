@@ -31,6 +31,7 @@ class HomeworkPhonicsController extends AdminAppController {
             $this->Session->setFlash($e->getMessage(),'flash',array('alert'=>'danger'));
         }
     }    
+
     
     public function view($id = null)
     {
@@ -44,4 +45,25 @@ class HomeworkPhonicsController extends AdminAppController {
         $this->set('post',$post);
     }
    
+   public function deleteall()
+    {
+        try
+        {
+            if ($this->request->is('post'))
+            {
+                foreach($this->data['HomeworkPhonic']['id'] as $key => $value)
+                {
+                    $this->HomeworkPhonic->delete($value);
+                }
+                $this->Session->setFlash(__('Student Record has been deleted'),'flash',array('alert'=>'success'));
+            }        
+            $this->redirect(array('action' => 'index'));
+        }
+        catch (Exception $e)
+        {
+            $this->Session->setFlash(__('Delete exam first'),'flash',array('alert'=>'danger'));
+            return $this->redirect(array('action' => 'index'));
+        }
+    }
+
 }
