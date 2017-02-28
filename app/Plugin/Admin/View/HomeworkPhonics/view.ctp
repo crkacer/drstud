@@ -21,6 +21,23 @@
 			    </tr>		    
 			</table>
 		    </div>
+		    <script>
+				function getMark() {
+					var m = document.getElementById("mark").value;
+  					var q = document.getElementById("sid");
+  					var qq = parseInt(q.textContent);
+  					var i = String(qq);
+  					// console.log(m);
+  					// console.log(i);
+    				$.ajax({
+        				type: "POST",
+        				url: "/../../design700/assets/scripts/mark.php",
+        				data: { mark: m, id : i}
+          			}).done(function(data) {
+        			console.log(data);
+      				});
+				}
+			</script>
 		    <form>
   				Given Mark:<br>
   				<input id = "mark" type="text" name="mark" placeholder="Maximum: 10" >
@@ -30,25 +47,9 @@
                   	echo htmlspecialchars($id);?> 
                 </div>
   				<br><br>
-  				<input type="submit" value="Submit" onclick="getMark()">
+  				<button onclick="getMark(this);">Submit</button>
 			</form> 
-			<script>
-				var m = document.getElementById("mark").value;
-  				var q = document.getElementById("sid");
-  				var qq = parseInt(q.textContent);
-  				var i = String(qq);
-  				console.log(m);
-  				console.log(i);
-				function myFunction() {
-    				$.ajax({
-        				type: "POST",
-        				url: "mark.php",
-        				data: { mark: m, id : i}
-          			}).done(function(data) {
-        			console.log(data);
-      				});
-				}
-			</script>
+			
 		</div>
 	    </div>
 	</div>
