@@ -7,9 +7,9 @@
 session_start();
 
 	define("SERVER", "localhost");
-	define("DATABASE", "db1");
+	define("DATABASE", "drstud");
 	define("USERNAME", "root");
-	define("PASSWORD", "");
+	define("PASSWORD", "1234567");
 
 	class ConnectDB
 	{

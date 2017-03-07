@@ -10,7 +10,7 @@ $this->Paginator->options(array(
 
 <div class="page-title"> <div class="title-env"> <h1 class="title"><?php echo __('Homework Phonic');?></h1></div></div>
 <div class="panel"><?php echo $this->Session->flash();?>
-    <?php $url=$this->Html->url(array('controller'=>'HomeworkPhonic')); 
+    <?php $url=$this->Html->url(array('controller'=>'HomeworkPhonics')); 
         if($userPermissionArr['search_right'])echo $this->element('pagination');
         else echo $this->element('pagination',array('IsSearch'=>'No'));
         $page_params = $this->Paginator->params();

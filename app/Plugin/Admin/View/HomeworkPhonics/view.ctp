@@ -15,6 +15,9 @@
 			    </tr>		
 			    <tr>
 			    <td><strong><small class="text-danger"><?php echo __('Record').':      ';?></small></strong><b><?php echo $post['HomeworkPhonic']['record_location'];?></b></td>
+			    </tr>
+			    <tr>
+			    <td><strong><small class="text-danger"><?php echo __('Mark').':      ';?></small></strong><b><?php echo $post['HomeworkPhonic']['mark'];?></b></td>
 			    <audio controls>
   					<source src="<?php echo $post['HomeworkPhonic']['record_location'];?>" type="audio/ogg">
   				</audio>
@@ -27,11 +30,9 @@
   					var q = document.getElementById("sid");
   					var qq = parseInt(q.textContent);
   					var i = String(qq);
-  					// console.log(m);
-  					// console.log(i);
     				$.ajax({
         				type: "POST",
-        				url: "/../../design700/assets/scripts/mark.php",
+        				url: "/../../app/webroot/design700/assets/scripts/mark.php",
         				data: { mark: m, id : i}
           			}).done(function(data) {
         			console.log(data);
